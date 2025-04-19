@@ -16,3 +16,5 @@ jobs:
         uses: hustcer/deepseek-review@v1
         with:
           chat-token: ${{ secrets.CHAT_TOKEN }}
+          sys-prompt: "你现在是一位资深的代码审查专家，需要对提供的代码进行详细审查。审查内容包括代码的性能、可读性、安全性等方面。请使用中文输出审查结果。"
+          user-prompt: "请对以下代码进行审查，并提供改进建议："
